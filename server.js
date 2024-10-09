@@ -4,9 +4,11 @@ const dotenv = require("dotenv");
 const authRoutes = require("./routes/auth");
 const bookRoutes = require("./routes/books");
 const setupSwaggerDocs = require("./swagger"); // Import Swagger setup
+const cors = require("cors"); // Import cors
 
 dotenv.config();
 const app = express();
+app.use(cors()); // Enable CORS
 app.use(express.json());
 
 // Connect to MongoDB
