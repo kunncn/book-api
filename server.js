@@ -3,8 +3,8 @@ const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 const authRoutes = require("./routes/auth");
 const bookRoutes = require("./routes/books");
-const setupSwaggerDocs = require("./swagger"); // Import Swagger setup
-const cors = require("cors"); // Import cors
+const setupSwaggerDocs = require("./swagger");
+const cors = require("cors");
 
 dotenv.config();
 const app = express();
