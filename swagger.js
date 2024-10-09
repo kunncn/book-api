@@ -10,8 +10,8 @@ const swaggerDefinition = {
   },
   servers: [
     {
-      url: "http://localhost:5000", // This should be your dev server URL
-      description: "Development server",
+      url: "https://testingbookapi.up.railway.app", // This should be your dev server URL
+      description: "Server",
     },
   ],
   components: {
